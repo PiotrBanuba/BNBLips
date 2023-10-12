@@ -13,10 +13,10 @@ let package = Package(
             name: "BNBLips",
             targets: [
                 "BNBLips",
-                "BNBLipsBNBSdkCoreTarget",
-                "BNBLipsBNBEffectPlayerTarget",
-                "BNBLipsBNBScriptingTarget",
-                "BNBLipsBNBFaceTrackerTarget"
+                "BNBLipsBNBSdkCore",
+                "BNBLipsBNBEffectPlayer",
+                "BNBLipsBNBScripting",
+                "BNBLipsBNBFaceTracker"
             ]
         ),
     ],
@@ -45,7 +45,7 @@ let package = Package(
             checksum: "aa0988bde661a16a029edcbd8c59c28eace694e766887c23966dc99955675c85"
         ),
         .target(
-            name: "BNBLipsBNBSdkCoreTarget",
+            name: "BNBLipsBNBSdkCore",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -54,7 +54,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBLipsBNBEffectPlayerTarget",
+            name: "BNBLipsBNBEffectPlayer",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -63,7 +63,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBLipsBNBScriptingTarget",
+            name: "BNBLipsBNBScripting",
             dependencies: [
                 .product(
                     name: "BNBScripting",
@@ -72,7 +72,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBLipsBNBFaceTrackerTarget",
+            name: "BNBLipsBNBFaceTracker",
             dependencies: [
                 .product(
                     name: "BNBFaceTracker",
