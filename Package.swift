@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-13"
+let bnbPackageVersion: Version = "1.8.0-14"
 
 let package = Package(
     name: "BNBLips",
@@ -13,10 +13,10 @@ let package = Package(
             name: "BNBLips",
             targets: [
                 "BNBLips_Target",
-                "BNBLips_BNBLips_Target",
-                "BNBLips_BNBLips_Target",
-                "BNBLips_BNBLips_Target",
-                "BNBLips_BNBLips_Target"
+                "BNBLips_BNBSdkCore_Target",
+                "BNBLips_BNBEffectPlayer_Target",
+                "BNBLips_BNBScripting_Target",
+                "BNBLips_BNBFaceTracker_Target"
             ]
         ),
     ],
