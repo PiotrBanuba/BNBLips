@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-15"
+let bnbPackageVersion: Version = "1.8.0-16"
 
 let package = Package(
     name: "BNBLips",
@@ -45,7 +45,7 @@ let package = Package(
             checksum: "aa0988bde661a16a029edcbd8c59c28eace694e766887c23966dc99955675c85"
         ),
         .target(
-            name: "BNBLipsBNBSdkCore",
+            name: "BNBLips_BNBSdkCore",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -54,7 +54,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBLipsBNBEffectPlayer",
+            name: "BNBLips_BNBEffectPlayer",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -63,7 +63,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBLipsBNBScripting",
+            name: "BNBLips_BNBScripting",
             dependencies: [
                 .product(
                     name: "BNBScripting",
@@ -72,7 +72,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBLipsBNBFaceTracker",
+            name: "BNBLips_BNBFaceTracker",
             dependencies: [
                 .product(
                     name: "BNBFaceTracker",
