@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-14"
+let bnbPackageVersion: Version = "1.8.0-15"
 
 let package = Package(
     name: "BNBLips",
@@ -12,11 +12,11 @@ let package = Package(
         .library(
             name: "BNBLips",
             targets: [
-                "BNBLips_Target",
-                "BNBLips_BNBSdkCore_Target",
-                "BNBLips_BNBEffectPlayer_Target",
-                "BNBLips_BNBScripting_Target",
-                "BNBLips_BNBFaceTracker_Target"
+                "BNBLips",
+                "BNBLips_BNBSdkCore",
+                "BNBLips_BNBEffectPlayer",
+                "BNBLips_BNBScripting",
+                "BNBLips_BNBFaceTracker"
             ]
         ),
     ],
@@ -40,12 +40,12 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "BNBLips_Target",
+            name: "BNBLips",
             url: "https://d2cm7wtcqqw29.cloudfront.net/1.8.0-58-g46079e7d74/BNBLips.zip",
             checksum: "aa0988bde661a16a029edcbd8c59c28eace694e766887c23966dc99955675c85"
         ),
         .target(
-            name: "BNBLips_BNBSdkCore_Target",
+            name: "BNBLipsBNBSdkCore",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -54,7 +54,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBLips_BNBEffectPlayer_Target",
+            name: "BNBLipsBNBEffectPlayer",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -63,7 +63,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBLips_BNBScripting_Target",
+            name: "BNBLipsBNBScripting",
             dependencies: [
                 .product(
                     name: "BNBScripting",
@@ -72,7 +72,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBLips_BNBFaceTracker_Target",
+            name: "BNBLipsBNBFaceTracker",
             dependencies: [
                 .product(
                     name: "BNBFaceTracker",
